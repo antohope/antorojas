@@ -1,10 +1,3 @@
-/*--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-
 html {
   scroll-behavior: smooth;
 }
@@ -50,13 +43,6 @@ img{
 	width:100%;
 }
 
-
-/* header */
-
-/*-- //header --*/
-
-
-/* CSS Document */
 header {
     position: absolute;
     z-index: 9;
@@ -68,7 +54,6 @@ header {
 	display: none;
 }
 
-/* Giving a background-color to the nav container. */
 nav { 
 	margin:0;
 	padding: 0;
@@ -89,18 +74,12 @@ nav {
     color: #30c39e;
 }
 
-
-/* Since we'll have the "ul li" "float:left"
- * we need to add a clear after the container. */
-
 nav:after {
 	content:"";
 	display:table;
 	clear:both;
 }
 
-/* Removing padding, margin and "list-style" from the "ul",
- * and adding "position:reltive" */
 nav ul {
 	float: right;
 	padding:0;
@@ -109,14 +88,12 @@ nav ul {
 	position: relative;
 	}
 	
-/* Positioning the navigation items inline */
 nav ul li {
 	margin: 0px;
 	display:inline-block;
 	float: left;
 	}
 
-/* Styling the links */
 nav a {
     color: #fff;
     text-transform: capitalize;
@@ -131,7 +108,6 @@ nav a {
 
 nav ul li ul li:hover { background: #f8f9fa; }
 
-/* Background color change on Hover */
 nav a:hover { 
 	color: #30c39e;	
 }
@@ -139,23 +115,18 @@ nav a:hover {
 	color: #30c39e;	
 }
 
-/* Hide Dropdowns by Default
- * and giving it a position of absolute */
 nav ul ul {
 	display: none;
 	position: absolute; 
-	/* has to be the same number as the "line-height" of "nav a" */
 	top: 30px; 
     background: #fff;
     padding: 10px;
 }
 	
-/* Display Dropdowns on Hover */
 nav ul li:hover > ul {
 	display:inherit;
 }
 	
-/* Fisrt Tier Dropdown */
 nav ul ul li {
 	width:170px;
 	float:none;
@@ -168,24 +139,13 @@ nav ul ul li a {
     display: block;
 }
 
-/* Second, Third and more Tiers	
- * We move the 2nd and 3rd etc tier dropdowns to the left
- * by the amount of the width of the first tier.
-*/
 nav ul ul ul li {
 	position: relative;
 	top:-60px;
-	/* has to be the same number as the "width" of "nav ul ul li" */ 
 	left:170px; 
 }
 
-	
-/* Change ' +' in order to change the Dropdown symbol */
 li > a:only-child:after { content: ''; }
-
-
-/* Media Queries
---------------------------------------------- */
 
 @media all and (max-width : 768px) {
 
@@ -201,14 +161,12 @@ li > a:only-child:after { content: ''; }
 		margin: 0;
 	}
 
-	/* Hide the navigation menu by default */
-	/* Also hide the  */
 	.toggle + a,
 	.menu {
 		display: none;
 	}
 
-	/* Stylinf the toggle lable */
+
 	.toggle {
 		display: block;
 		padding:10px 20px;	
@@ -235,7 +193,6 @@ li > a:only-child:after { content: ''; }
 		background-color: #fff;
 	}
 
-	/* Display Dropdown when clicked on Parent Lable */
 	[id^=drop]:checked + ul {
 		display: block;
 		background: #fff;
@@ -243,7 +200,6 @@ li > a:only-child:after { content: ''; }
 		text-align: center;
 	}
 
-	/* Change menu item's width to 100% */
 	nav ul li {
 		display: block;
 		width: 100%;
@@ -278,21 +234,17 @@ li > a:only-child:after { content: ''; }
 		background-color: #212121; 
 	}
 
-	/* Hide Dropdowns by Default */
 	nav ul ul {
 		float: none;
 		position:static;
 		color: #ffffff;
-		/* has to be the same number as the "line-height" of "nav a" */
 	}
 		
-	/* Hide menus on hover */
 	nav ul ul li:hover > ul,
 	nav ul li:hover > ul {
 		display: none;
 	}
 		
-	/* Fisrt Tier Dropdown */
 	nav ul ul li {
 		display: block;
 		width: 100%;
@@ -301,8 +253,6 @@ li > a:only-child:after { content: ''; }
 
 	nav ul ul ul li {
 		position: static;
-		/* has to be the same number as the "width" of "nav ul ul li" */ 
-
 	}
 
 }
@@ -316,8 +266,6 @@ li > a:only-child:after { content: ''; }
 
 }
 
-
-/*-- popup --*/
 
 .overlay {
   position: fixed;
@@ -379,9 +327,6 @@ li > a:only-child:after { content: ''; }
   color: #30c39e;
 }
 
-/*-- //popup --*/
-
-/*-- banner --*/
 .banner{
 	background:url(../images/banner.jpg) no-repeat center;
 	background-size:cover;
@@ -456,9 +401,7 @@ li > a:only-child:after { content: ''; }
     border: 2px solid #30c39e;
     color: #fff;
 }
-/*-- // banner --*/
 
-/*--  about --*/
 .about-grids h4 {
     font-size: 22px;
     line-height: 35px;
@@ -543,7 +486,6 @@ h3.w3layouts_tittle.two {
     color: #ffffff;
     letter-spacing: 1px;
     margin-bottom: 1.4em;
-    /* border-bottom: 1px dashed #ffffff; */
     padding-bottom: 0em;
     font-weight: 600;
 }
@@ -587,10 +529,7 @@ h3.heading:after {
 .about-grids {
     margin-top: 5em;
 }
-/*-- // about --*/
 
-
-/*--  services --*/
 .services {
     background: #30c39e;
 }
@@ -620,9 +559,7 @@ h3.heading:after {
     letter-spacing: .5px;
     font-size: 16px;
 }
-/*-- // services --*/
 
-/*-- experience --*/
 .exp-grids {
     margin-top: 5em;
 }
@@ -672,9 +609,7 @@ h3.heading:after {
     padding-left: 3em;
      background: #222;
 }
-/*-- //experience --*/
 
-/*-- text --*/
 h5.w3pvt-title {
     text-transform: capitalize;
     font-weight: 600;
@@ -724,9 +659,7 @@ a.work:hover,a.hire {
     -o-border-radius: 4px;
     -ms-border-radius: 4px;
 }
-/*-- //text --*/
 
-/*-- blog -*/
 .blog {
     background: url(../images/blog1.jpg) no-repeat 0px 0px;
     background-size: cover;
@@ -798,9 +731,7 @@ h4.left-grid-blog {
     letter-spacing: 2px;
 	margin-bottom: .7em;
 }
-/*-- //blog -*/
 
-/*--  contact --*/
 .contact-grids {
     margin-top: 5em;
 }
@@ -885,9 +816,7 @@ h4.left-grid-blog {
     min-height: 120px;
     resize: none;
 }
-/*-- // contact --*/
 
-/*-- footer --*/
 a.move-top span {
     color: #fff;
     width: 30px;
@@ -940,11 +869,7 @@ footer {
 .copyright a:hover {
     color: #fff;
 }
-/*-- //footer --*/
 
-
-
-/*-- Responsive Design --*/
 
 @media(max-width:1080px) {
 	.banner-layer,.banner {
